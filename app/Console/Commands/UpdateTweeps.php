@@ -59,6 +59,6 @@ class UpdateTweeps extends Command
     private function updateTweep(string $account, string $name)
     {
         echo "Setting the name of $account to $name...\n";
-        DB::statement("REPLACE INTO tweeps (account, name) VALUES (?, ?)", [$account, $name]);
+        DB::statement("REPLACE INTO tweeps (account, name) VALUES ('$account', '$name')");
     }
 }
