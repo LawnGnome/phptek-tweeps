@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $tweeps = DB::table('tweeps')->paginate(30);
+    return view('index', ['tweeps' => $tweeps]);
 });
