@@ -38,7 +38,11 @@ parameter.
 
 ### Web Interface
 
-Haven't written it yet. I'll write instructions when I have.
+Starting the development server:
+
+```sh
+./artisan serve --port=9000 --host=127.0.0.1
+```
 
 ## Contributing
 
