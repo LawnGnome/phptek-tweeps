@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "195cdccf278a36d0c4a084ab8dbd8281",
-    "content-hash": "82ddb9a7c176278e1ec798b4d5f3d75a",
+    "hash": "deba0133e3a109739fc2a0f401fb3292",
+    "content-hash": "a6d1f9e13fd7b782330e788f44fb5791",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -2063,6 +2063,52 @@
                 "test"
             ],
             "time": "2015-05-11 14:41:42"
+        },
+        {
+            "name": "lawngnome/phpdbg-fake-request",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LawnGnome/phpdbg-fake-request.git",
+                "reference": "c195a8b0fd6b59f0d462bd1bb9b19b2046c205a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LawnGnome/phpdbg-fake-request/zipball/c195a8b0fd6b59f0d462bd1bb9b19b2046c205a8",
+                "reference": "c195a8b0fd6b59f0d462bd1bb9b19b2046c205a8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7",
+                "symfony/console": "^3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.3"
+            },
+            "bin": [
+                "bin/fake-request"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LawnGnome\\PhpdbgFakeRequest\\": "src"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Harvey",
+                    "email": "aharvey@php.net"
+                }
+            ],
+            "description": "A CLI script that will fake a HTTP request before delegating control to another PHP script",
+            "time": "2016-05-26 14:59:22"
         },
         {
             "name": "mockery/mockery",
